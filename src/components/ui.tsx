@@ -150,10 +150,12 @@ export function ButtonLink({
   href,
   children,
   variant = "primary",
+  newTab = false,
 }: {
   href: string;
   children: React.ReactNode;
   variant?: "primary" | "secondary";
+  newTab?: boolean;
 }) {
   const classes =
     variant === "primary"
@@ -163,6 +165,8 @@ export function ButtonLink({
   return (
     <a
       href={href}
+      target={newTab ? "_blank" : undefined}
+      rel={newTab ? "noopener noreferrer" : undefined}
       className={`inline-flex items-center justify-center rounded-md border px-4 py-3 font-mono text-sm transition ${classes}`}
     >
       {children}
