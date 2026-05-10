@@ -167,7 +167,7 @@ export function ButtonLink({
       href={href}
       target={newTab ? "_blank" : undefined}
       rel={newTab ? "noopener noreferrer" : undefined}
-      className={`inline-flex items-center justify-center gap-2 rounded-md border px-4 py-3 font-mono text-sm transition ${classes}`}
+      className={`relative inline-flex items-center justify-center rounded-md border px-4 py-3 font-mono text-sm transition ${newTab ? "pr-8" : ""} ${classes}`}
     >
       {children}
       {newTab ? <ExternalLinkIcon /> : null}
@@ -179,7 +179,7 @@ function ExternalLinkIcon() {
   return (
     <svg
       aria-hidden="true"
-      className="size-4 text-emerald-300"
+      className="absolute right-2 top-2 size-3.5 text-emerald-300"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
