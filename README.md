@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Noyap Web
 
-## Getting Started
+Landing page and lightweight docs site for Noyap.
 
-First, run the development server:
+Target domain: `https://noyap.wannarat.cc`
+
+## Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Static, Vercel-ready pages
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Deploy To Vercel
 
-To learn more about Next.js, take a look at the following resources:
+1. Import this repository in Vercel.
+2. Set the framework preset to `Next.js`.
+3. Use the default build command: `npm run build`.
+4. Use the default output settings.
+5. Add the custom domain `noyap.wannarat.cc`.
+6. Point DNS to Vercel as instructed in the Vercel dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content Sources
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Package: `@ppwnr88/noyap`
 
-## Deploy on Vercel
+Repository: `https://github.com/ppwnr88/noyap`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Benchmark data is linked from the upstream repository and should not be treated as guaranteed savings for every project.
