@@ -167,10 +167,31 @@ export function ButtonLink({
       href={href}
       target={newTab ? "_blank" : undefined}
       rel={newTab ? "noopener noreferrer" : undefined}
-      className={`inline-flex items-center justify-center rounded-md border px-4 py-3 font-mono text-sm transition ${classes}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-md border px-4 py-3 font-mono text-sm transition ${classes}`}
     >
       {children}
+      {newTab ? <ExternalLinkIcon /> : null}
     </a>
+  );
+}
+
+function ExternalLinkIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="size-4 text-emerald-300"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 14L14 6M8 6H14V12"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 
