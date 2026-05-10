@@ -41,9 +41,7 @@ export default function Home() {
               multilingual, and safer for real developer workflows.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/install" newTab>
-                Get started
-              </ButtonLink>
+              <ButtonLink href="/install">Get started</ButtonLink>
               <ButtonLink href={site.github} variant="secondary" newTab>
                 GitHub
               </ButtonLink>
