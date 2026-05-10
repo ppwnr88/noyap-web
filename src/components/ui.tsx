@@ -167,7 +167,7 @@ export function ButtonLink({
       href={href}
       target={newTab ? "_blank" : undefined}
       rel={newTab ? "noopener noreferrer" : undefined}
-      className={`group relative inline-flex items-center justify-center rounded-md border px-4 py-3 font-mono text-sm transition ${newTab ? "pr-8" : ""} ${classes}`}
+      className={`group relative inline-flex min-w-24 items-center justify-center rounded-md border px-4 py-3 font-mono text-sm transition ${classes}`}
     >
       {children}
       {newTab ? <ExternalLinkIcon /> : null}
